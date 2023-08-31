@@ -16,9 +16,12 @@ public class KidsPageTest extends BaseTest {
         kidsPage = new KidsPage();
 
     }
+
     @Test
     public void test002() {
         kidsPage.clickOnToysCategoryLink();
-        kidsPage.dropDownPageAndSelectToy();
+        kidsPage.selectCategory();
+        kidsPage.selectToy();
+
     }
-    }
+}
