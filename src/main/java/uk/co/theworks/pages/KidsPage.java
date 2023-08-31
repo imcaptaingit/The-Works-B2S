@@ -5,7 +5,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import uk.co.theworks.utility.Utility;
 
-public class kidsPage extends Utility {
+public class KidsPage extends Utility {
 
     @CacheLookup
     @FindBy(xpath = "//ul[@class='lhn-level-2']//a[contains(text(),'Toys for 3-5 Year Olds')]")
