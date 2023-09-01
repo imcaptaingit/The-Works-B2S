@@ -1,11 +1,14 @@
 package uk.co.theworks.pages;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import uk.co.theworks.utility.Utility;
 
 public class KidsPage extends Utility {
+    private static final Logger log = LogManager.getLogger(KidsPage.class);
     @CacheLookup
     @FindBy (xpath = "//a[@class='desktop-nav-link desktop-nav-link-2 ']")
     WebElement kids;
@@ -33,5 +36,4 @@ public class KidsPage extends Utility {
    public void selectToy(){
     clickOnElement(toy);
    }
-
 }

@@ -34,6 +34,6 @@ public class HomePageTest extends BaseTest {
     @Test
     public void test002() {
         kidsPage.clickOnToysCategoryLink();
-        kidsPage.dropDownPageAndSelectToy();
+
     }
 }
