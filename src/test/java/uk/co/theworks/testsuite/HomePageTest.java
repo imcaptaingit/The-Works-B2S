@@ -18,21 +18,22 @@ public class HomePageTest extends BaseTest {
     KidsPage kidsPage;
 
     @BeforeMethod
-    public void inIt(){
+    public void inIt() {
         homePage = new HomePage();
         kidsPage = new KidsPage();
-
     }
     @Test
-
-    public void Test001(){
+    public void acceptCookies(){
+        homePage.acceptingTheCookies();
+    }
+    @Test
+    public void Test001() {
         homePage.clickOnKidsLink();
     }
+
     @Test
-public void test002(){
+    public void test002() {
         kidsPage.clickOnToysCategoryLink();
         kidsPage.dropDownPageAndSelectToy();
-
-
-}
+    }
 }
