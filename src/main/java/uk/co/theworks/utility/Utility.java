@@ -363,4 +363,10 @@ public class Utility extends ManageBrowser {
         }
         return destination;
     }
+    public void dragAndDropBy(WebElement element){
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).click().perform();
+    }
 }
+//     Actions actions = new Actions(driver);
+//        actions.moveToElement(driver.findElement(by)).click().perform();
